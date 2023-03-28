@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Transportadora Dely</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    </head>
+<body>
+    <div>
+        <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Transportadora Dely </strong>. 
+        <h2 class="apresentacao__trechos">Escolha o trajeto do frete:</h2>
+    <form>
+        <div class="apresentacao__cidades">
+       <label for="cidadeOrigem">Cidade de origem:</label>
+       <input type="text" id="cidadeOrigem" name="cidadeOrigem"><br> 
+    </div>
+    <div class="apresentacao__cidades">
+       <label for="cidadeDestino1">Cidade de destino :</label>
+       <input type="text" id="cidadeDestino1" name="cidadeDestino1"><br> 
+    </div>
+    <div class="apresentacao__cidades">
+       <label for="cidadeDestino2">Cidade de destino :</label>
+       <input type="text" id="cidadeDestino2" name="cidadeDestino2"><br> 
+    </div>
+       <h3 class="modalidade">Esolha a modalidade de transporte desejada:</h3>
+       <div class="campos">
+       <input type="radio" name="caminhao" value="pequeno" checked> Caminhão de pequeno porte (R$ 4,87/km) <br>
+       <input type="radio" name="caminhao" value="medio"> Caminhão de médio porte (R$ 11,92/km) <br>
+       <input type="radio" name="caminhao" value="grande"> Caminhão de grande porte (R$ 27,44/km) <br>
+       </div><br></br>
+       <input class="apresentacao__links__link__consulta" type="button" value="Consultar" onclick="distanciaEntreCidades()">
+       <br></br>
+       <p class="resultado" id="resultado"></p>
+       <br></br>
+       <a class="apresentacao__links__link__consulta" href="calculaPeso.html">Adicionar Produto</a></button>
+    <script src="addTrechoItem1.js" ></script>
+    <footer class="rodape">
+        <p>Criado por Daniele Dequi</p>
+
+        </footer>
+</body>
+</html>

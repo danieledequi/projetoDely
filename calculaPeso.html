@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora Dely</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div>
+        <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Transportadora Dely </strong>. 
+            <h2 class="apresentacao__links">Liste abaixo os produtos que deseja transportar:</h2>
+    </div>
+    <form>
+        <div class="apresentacao__cidades">
+         <label for="produto">Produto:</label>
+        <input type="text" id="produto"><br>
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso" step="0.01"><br>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade"><br>
+    </div>
+    <br></br>
+        <button class="apresentacao__links__link__consulta" type="button" onclick="adicionarProduto()">Adicionar Produto</button>
+    <br></br>
+    </form>
+    <h2 class="apresentacao__trechos">Produtos adicionados:</h2>
+    <ul id="lista-produtos"></ul>
+    <p class="apresentacao__trechos">Peso Total: <span id="peso-total">0</span> kg</p>
+    <br></br>
+    <p class="resultado" id="resultado"></p>
+<br></br>
+<button class="apresentacao__links__link__consulta" type="button" onclick="limparCampos()">Limpar</button>
+<br></br>
+<h3 class="apresentacao__trechos">Relatório da solicitação:</h3>
+<p class="resultado" id="resultado"></p>
+<br></br>
+<input class="apresentacao__links__link__consulta" type="button" name="finalizar" id="finalizar" value="Finalizar" onclick="finalizar()"></form>
+<script src="calculaPeso.js"></script>
+<footer class="rodape">
+    <p>Criado por Daniele Dequi</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora Dely</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    </head>
+<body>
+    <div>
+        <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">A Transportadora Dely </strong> é um diferencial no mercado. Nossa frota é composta por caminhões de portes distintos, além de atender diversas regiões do país. 
+        <h2 class="apresentacao__links">Simule agora o seu frete.</h2>
+    </div>
+    <form>
+        <div class= "apresentacao__cidades">
+            <label for="cidadeOrigem">Cidade de origem:</label>
+            <input type="text" id="cidadeOrigem" name="cidadeOrigem" required><br> 
+        </div>
+        <div class= "apresentacao__cidades">
+            <label for="cidadeDestino">Cidade de destino :</label>
+            <input type="text" id="cidadeDestino" name="cidadeDestino" required><br> 
+        </div>
+       <h3 class="modalidade">Escolha a modalidade de transporte desejada:</h3>
+       <div class="campos">
+       <input type="radio" name="caminhao" value="pequeno" checked> Caminhão de pequeno porte (R$ 4,87/km) <br>
+       <input type="radio" name="caminhao" value="medio"> Caminhão de médio porte (R$ 11,92/km) <br>
+       <input type="radio" name="caminhao" value="grande"> Caminhão de grande porte (R$ 27,44/km) <br>
+        </div></select><br>
+       <input class="apresentacao__links__link__consulta" type="button" value="Consultar" onclick="distanciaEntreCidades()">
+        </form>
+        <br><br>
+    <p class="resultado" id="resultado"></p>
+    <br><br>
+    <a class="apresentacao__links__link__consulta" href="homePage.html">Voltar</a></button>
+
+    <script src="consultaTrecho.js" ></script>
+    <footer class="rodape">
+        <p>Criado por Daniele Dequi</p>
+
+        </footer>
+</body>
+</html>
